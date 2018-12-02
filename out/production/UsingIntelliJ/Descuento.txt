@@ -1,0 +1,27 @@
+Lunes:1:Ipod:2
+Lunes:2:Screen:4%
+Lunes:3:Play Station 4:5%
+Lunes:4:Memoria RAM 8 GB:7%
+Lunes:5:Camara GO PRO:10%
+Lunes:6:Impresora:2%
+Martes:7:Pantalla 26'':5%
+Martes:3:Play Station 4:7%
+Martes:8:Cargador Génerico Celular:3%
+Martes:1:Ipod:9%
+Martes:5:Camara GO PRO:1%
+Martes:9:Cable USB Datos:1%
+Miércoles:7:Pantalla 26'':4%
+Miércoles:1:Ipod:7%
+Miércoles:6:Impresora:3%
+Miércoles:3:Play Station 4:9%
+Miércoles:5:Camara GO PRO:7%
+Miércoles:8:Cargador Génerico Celular:4%
+Miércoles:9:Cable USB Datos:6%
+Miércoles:4:Memoria RAM 8 GB:10%
+Jueves:2:Screen:12%
+Jueves:7:Pantalla 26'':11%
+Jueves:8:Cargador Génerico Celular:6%
+Jueves:9:Cable USB Datos:7%
+Jueves:5:Camara GO PRO:2%
+Jueves:4:Memoria RAM 8 GB:4%
+Jueves:1:Ipod:2%

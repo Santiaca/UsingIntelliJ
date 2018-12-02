@@ -1,0 +1,9 @@
+﻿1:Ipod:190000
+2:Screen:10000
+3:Play Station 4:1800000
+4:Memoria RAM 8 GB:150000
+5:Camara GO PRO:250000
+6:Impresora:300000
+7:Pantalla 26'':1500000
+8:Cargador Génerico Celular:20000
+9:Cable USB Datos:15000
