@@ -10,7 +10,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-import back.ConexionBaseDeDatos;
+import back.conexionBaseDeDatos;
 
 import java.net.URL;
 import java.sql.SQLException;
@@ -20,10 +20,6 @@ import java.util.ResourceBundle;
 public class Controller  implements Initializable{
 
     public String rutaLocal="C://Users//santiaca//IdeaProjects//UsingIntelliJ";
-
-    public String getRutaLocal() {
-        return rutaLocal;
-    }
 
    /* ObservableList<String> availableProducto = FXCollections.observableArrayList("Ipod","Screen","PS4","Memoria Ram 8GB","Camara");
     ObservableList<String> ava = FXCollections.observableArrayList("Ipod","Screen","PS4","Memoria Ram 8GB","Camara");
@@ -89,7 +85,6 @@ public class Controller  implements Initializable{
             validado = true;
         }
         if (txtCantidad.getText().equals("")) {
-
             validado = true;
         }
         return validado;
@@ -132,10 +127,6 @@ public class Controller  implements Initializable{
         lblMensaje.setText("");
         lblMensajeError.setText("");
     }
-    private String productoComprado;
-    private int cantidadProductosComprados;
-    private double valorPagado;
-
 
     @FXML
     void clicRegistrarCompra(ActionEvent event) throws SQLException {
@@ -148,7 +139,7 @@ public class Controller  implements Initializable{
         RegistrarCompra objRegistrarCompra = new RegistrarCompra();
         objRegistrarCompra.registrarCompra(rutaLocal+"//RegistroVentas.txt", objRegistro);
 
-        ConexionBaseDeDatos objCnxBD = new ConexionBaseDeDatos();
+        conexionBaseDeDatos objCnxBD = new conexionBaseDeDatos();
         objCnxBD.insertarDatosEnBD(objRegistro);
 
         lblMensaje.setText("Compra registrada correctamente");
@@ -166,7 +157,4 @@ public class Controller  implements Initializable{
         lblMensaje.setText("");
         lblMensajeError.setText("");
     }
-
-
-
 }

@@ -12,7 +12,6 @@ public class ConsultarDescuento {
 
     public boolean consultarDescuento(String rutaArchivoAConsultar, int indiceCampoAConsultar, Compra objCompra ){
 
-
         boolean consultaDescuento=false;
 
         BufferedReader br = null;
@@ -27,12 +26,9 @@ public class ConsultarDescuento {
                     if ((sCurrentLine.split(":")[0]).equals(String.valueOf(objCompra.getDiaSemana()))) {
                         descuentoProducto = Double.parseDouble(sCurrentLine.split(":")[3]) ;
                         consultaDescuento = true;
-                        System.out.println(descuentoProducto);
                         break;
                     }
-
                 }
-
             }
         } catch (IOException e){
             e.printStackTrace();

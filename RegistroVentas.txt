@@ -1,5 +1,4 @@
-
-5:Camara GO PRO:1125000.0
-10:Camara GO PRO:2250000.0
-10:Camara GO PRO:2250000.0
-5:Camara GO PRO:1125000.0
+1:Ipod:0.0
+16:Ipod:0.0
+1:Camara GO PRO:225000.0
+0:Camara GO PRO:0.0

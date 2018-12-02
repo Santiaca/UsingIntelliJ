@@ -2,17 +2,16 @@ package bussines;
 
 import back.ConsultarDescuento;
 import back.ConsultarPrecio;
-import front.Controller;
 
 public class CalcularDatos {
 
     public CalcularDatos(){
     }
 
-    front.Controller controller = new front.Controller();
-    String rutaLocal = controller.rutaLocal;
-
     public Pago calcularDatos(Compra objCompra) {
+
+        front.Controller controller = new front.Controller();
+        String rutaLocal = controller.rutaLocal;
 
         ConsultarPrecio objConsultarPrecio = new ConsultarPrecio();
         objConsultarPrecio.consultarPrecio(rutaLocal+"//Producto.txt", 1, 2, objCompra);

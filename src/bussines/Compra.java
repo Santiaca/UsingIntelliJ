@@ -7,21 +7,33 @@ public class Compra {
     private int cantidad;
 
     public Compra() {
-        this.producto="";
-        this.diaSemana=0;
-        this.cantidad=0;
+        this.producto = "";
+        this.diaSemana = 0;
+        this.cantidad = 0;
     }
 
-    public String getProducto() {return producto;}
+    public String getProducto() {
+        return producto;
+    }
 
-    public void setProducto(String producto) {this.producto = producto;}
+    public void setProducto(String producto) {
+        this.producto = producto;
+    }
 
-    public int getDiaSemana() {return diaSemana;}
+    public int getDiaSemana() {
+        return diaSemana;
+    }
 
-    public void setDiaSemana(int diaSemana) {this.diaSemana = diaSemana;}
+    public void setDiaSemana(int diaSemana) {
+        this.diaSemana = diaSemana;
+    }
 
-    public int getCantidad() {return cantidad;}
+    public int getCantidad() {
+        return cantidad;
+    }
 
-    public void setCantidad(int cantidad) {this.cantidad = cantidad;}
+    public void setCantidad(int cantidad) {
+        this.cantidad = cantidad;
+    }
 
 }

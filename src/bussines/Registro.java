@@ -17,15 +17,23 @@ public class Registro {
         return productoComprado;
     }
 
-    public void setProductoComprado(String productoComprado) {this.productoComprado = productoComprado;}
+    public void setProductoComprado(String productoComprado) {
+        this.productoComprado = productoComprado;
+    }
 
-    public int getCantidadProductosComprados() {return cantidadProductosComprados;}
+    public int getCantidadProductosComprados() {
+        return cantidadProductosComprados;
+    }
 
     public void setCantidadProductosComprados(int cantidadProductosComprados) {
         this.cantidadProductosComprados = cantidadProductosComprados;
     }
 
-    public double getValorPagado() {return valorPagado;}
+    public double getValorPagado() {
+        return valorPagado;
+    }
 
-    public void setValorPagado(double valorPagado) {this.valorPagado = valorPagado;}
+    public void setValorPagado(double valorPagado) {
+        this.valorPagado = valorPagado;
+    }
 }

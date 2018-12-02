@@ -14,23 +14,35 @@ public class Pago {
         this.totalPagar = 0;
     }
 
-    public double getValorUnitarioProducto() {return valorUnitarioProducto;}
+    public double getValorUnitarioProducto() {
+        return valorUnitarioProducto;
+    }
 
     public void setValorUnitarioProducto(double valorUnitarioProducto) {
         this.valorUnitarioProducto = valorUnitarioProducto;
     }
 
-    public double getPorcentajeDescuento() {return porcentajeDescuento;}
+    public double getPorcentajeDescuento() {
+        return porcentajeDescuento;
+    }
 
     public void setPorcentajeDescuento(double porcentajeDescuento) {
         this.porcentajeDescuento = porcentajeDescuento;
     }
 
-    public double getValorDescuento() {return valorDescuento;}
+    public double getValorDescuento() {
+        return valorDescuento;
+    }
 
-    public void setValorDescuento(double valorDescuento) {this.valorDescuento = valorDescuento;}
+    public void setValorDescuento(double valorDescuento) {
+        this.valorDescuento = valorDescuento;
+    }
 
-    public double getTotalPagar() {return totalPagar;}
+    public double getTotalPagar() {
+        return totalPagar;
+    }
 
-    public void setTotalPagar(double totalPagar) {this.totalPagar = totalPagar;}
+    public void setTotalPagar(double totalPagar) {
+        this.totalPagar = totalPagar;
+    }
 }

@@ -11,18 +11,17 @@ public class RegistrarCompra {
 
         boolean registroCompra = false;
         FileWriter fichero = null;
-        PrintWriter pw = null;
+        PrintWriter printWriter = null;
         try {
             fichero = new FileWriter(rutaArchivoACrear,true);
-            pw = new PrintWriter(fichero);
-            pw.println(objRegistro.getCantidadProductosComprados() + ":" + objRegistro.getProductoComprado() + ":" + objRegistro.getValorPagado());
+            printWriter = new PrintWriter(fichero);
+            printWriter.println(objRegistro.getCantidadProductosComprados() + ":" + objRegistro.getProductoComprado() + ":" + objRegistro.getValorPagado());
             registroCompra = true;
-
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
             try {
-                // Nuevamente aprovechamos el finally para asegurarnos que se cierra el fichero.
+                // asegurarnos que se cierra el fichero
                 if (null != fichero)
                     fichero.close();
             } catch (Exception e2) {

@@ -1,14 +1,13 @@
 package back;
 
 import bussines.Registro;
-
 import java.sql.*;
 
-public class ConexionBaseDeDatos {
+public class conexionBaseDeDatos {
 
     Connection connection = null;
 
-    public ConexionBaseDeDatos() throws SQLException {
+    public conexionBaseDeDatos() throws SQLException {
         try {
             connection = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "system", "system");
         } catch (SQLException e) {
@@ -22,12 +21,9 @@ public class ConexionBaseDeDatos {
         int cantidadProductosComprados = objRegistro.getCantidadProductosComprados();
         double valorpagado = objRegistro.getValorPagado();
 
-        System.out.printf(productoComprado);
-        System.out.printf("" + cantidadProductosComprados);
-        System.out.printf("" + valorpagado);
-
         Statement statement = connection.createStatement();
-        statement.executeUpdate("INSERT INTO TABLA_COMPRAS VALUES " + "('" + productoComprado + "','" + cantidadProductosComprados + "','" + valorpagado + "')");
+        statement.executeUpdate("INSERT INTO TABLA_COMPRAS VALUES " + "('" + productoComprado + "','" + cantidadProductosComprados + "','" + valorpagado + "',SYSDATE" + ")");
+        statement.close();
     }
 
 }

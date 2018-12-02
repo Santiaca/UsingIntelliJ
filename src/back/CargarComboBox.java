@@ -8,19 +8,19 @@ import java.io.IOException;
 
 public class CargarComboBox {
 
-    public void cargarDatosEnComboBox(String rutaArchivoAConsultar, int indiceCampoAConsultar, ComboBox<String> comboBox){
+    public void cargarDatosEnComboBox(String rutaArchivoAConsultar, int indiceCampoAConsultar, ComboBox<String> comboBox) {
         try {
-            BufferedReader br = new BufferedReader(new FileReader(rutaArchivoAConsultar));
-            StringBuilder sb = new StringBuilder();
-            String line = br.readLine();
+            BufferedReader bufferedReader = new BufferedReader(new FileReader(rutaArchivoAConsultar));
+            StringBuilder stringBuilder = new StringBuilder();
+            String line = bufferedReader.readLine();
             while (line != null) {
                 //Add Item
                 // comboBox.getItems().add(line);
                 comboBox.getItems().addAll(line.split(":")[indiceCampoAConsultar]);
-                sb.append(line);
-                line = br.readLine();
+                stringBuilder.append(line);
+                line = bufferedReader.readLine();
             }
-            br.close();
+            bufferedReader.close();
         } catch (IOException e) {
             System.out.println("No se encontro archivo");
 
